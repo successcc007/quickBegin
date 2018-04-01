@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/public/main/index",
     "pages/public/login",
+    "pages/public/main/index",
     "pages/teacher/manage/manage",
     "pages/student/index/index",
     "pages/student/smessage/smessage",
