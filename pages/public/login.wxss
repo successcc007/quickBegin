@@ -1,0 +1,17 @@
+/* pages/public/login.wxss */
+
+.login {
+  text-align: center;
+  margin: 20px 0 0 5px;
+}
+
+button {
+  color: white;
+  background-color: green
+}
+
+.container{
+  background-color:antiquewhite
+
+}
+page{height:100%}

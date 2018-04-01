@@ -1,0 +1,42 @@
+/* pages/teacher/sign/sign.wxss */
+
+.containerall image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.managetext {
+  width: 200rpx;
+  margin: 10rpx auto;
+}
+.back button{
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 0 0 10px;
+}
+.back {
+  background-color: gainsboro;
+}
+
+.itemview button {
+  margin: 50rpx auto;
+  width: 100%
+}
+
+.itemview {
+  display: flex;
+}
+
+.manageadd {
+  color: red;
+  margin:0 auto 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 90%;
+}
+
+.manageaddview {
+  width: 100%;
+  text-align: center;
+}

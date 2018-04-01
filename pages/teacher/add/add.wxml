@@ -1,0 +1,24 @@
+<!--add.wxml-->
+<view class="containerall">
+  <view class='itemview'>
+    名称 ：
+    <input type='text' class='managetext' name='name' bindinput ="nameInput" placeholder="课程名称"></input>
+  </view>
+  <view class='itemview'>
+    地点 ：
+    <input type='text'  class='managetext' name='adress'  bindinput ="areaInput" placeholder="上课地点"></input>
+  </view>
+  <view class='itemview'>
+    时间 ：
+    <input type='text' class='managetext' name='time'  bindinput ="timeInput" placeholder="上课时间"></input>
+  </view>
+  <view class='itemview'>
+    <button class='managetext' name='delete' id='add'>生成二维码</button>
+  </view>
+  <view class='itemview'>
+    <image class='managetext' name='qrcode' id='qrcode' src='{{img_qrcode}}'></image>
+  </view>
+  <view class='itemview'>
+    <button class='managetext' name='class_begin' id='class{{item.id}}' bindtap='doclick' >确定</button>
+  </view>
+</view>

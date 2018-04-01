@@ -1,0 +1,10 @@
+<!--pages/teacher/upload/upload.wxml-->
+<view class='back' bindtap="navigateBack" ><button>首页</button></view>
+<button bindtap="upload">上传文件</button>
+<view class='textview'>
+<text class='text' >
+公告
+</text>
+</view>
+<button bindtap="upload">发布公告</button>
+

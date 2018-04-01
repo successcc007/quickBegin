@@ -1,0 +1,27 @@
+<!--sign.wxml-->
+<view class="containerall">
+  <view class='itemview'>
+    名称 ：
+    <input type='text'  value='{{name}}'  class='managetext' name='name' id='name'></input>
+  </view>
+  <view class='itemview'>
+    地点 ：
+    <input type='text' value=' {{adress}}' class='managetext' name='area' id='area'></input>
+  </view>
+  <view class='itemview'>
+    时间 ：
+    <input type='text' value='{{time}} ' class='managetext' name='time' id='time'></input>
+  </view>
+  <view class='itemview'>
+    <button  class='managetext' name='delete' id='add'>发布定位</button> 
+  </view>  
+  <view class='itemview'>
+    <button bindtap='clksigninfo' class='managetext' name='delete' id='add'>签到情况</button> 
+  </view>  
+  <view class='itemview'>
+    <button class='managetext' name='class_begin' bindtap='clkmessage' >查看留言</button>
+  </view>
+  <view class='itemview'>
+    <button class='managetext' name='class_begin' bindtap='clkscore' >成绩查看</button>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/teacher/message/message.wxml-->
+<view class="table">
+  <!-- <view class="tr bg-w">
+    <view class="thname">head1</view>
+    <view class="thtext">head2</view>
+  </view> -->
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="tdname">{{item.content}}</view>
+      <view class="tdtext">{{item.sName}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="tdname">{{item.content}}</view>
+      <view class="tdtext">{{item.sName}}</view>
+    </view>
+  </block>
+</view>

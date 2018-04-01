@@ -1,0 +1,33 @@
+/* pages/teacher/manage.wxss */
+
+.itemview input{
+  width: 400rpx;
+}
+
+.containerall image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.managetext {
+  width: 200rpx;
+}
+
+.itemview {
+  display: flex;
+  margin: 30rpx auto;
+}
+
+.manageadd {
+  color: red;
+  margin:0 auto 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 90%;
+}
+
+.manageaddview {
+  width: 100%;
+  text-align: center;
+}
+

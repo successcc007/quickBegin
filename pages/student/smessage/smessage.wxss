@@ -1,0 +1,46 @@
+/* pages/student/smessage/smessage.wxss */
+
+.table {
+  border: 0px solid darkgray;
+  width: 100%;
+}
+
+.table text {
+  margin: 10px 0 0 20px;
+}
+
+.table block {
+  display: block;
+}
+
+.b1 {
+  display: block;
+  
+}
+
+.mes text {
+  display: block; 
+  color: black;
+}
+.b1 text {
+  width: 100%;
+}
+.b2 {
+  display: block;
+}
+.b2 .liuyan text{
+  display: block;
+  text-align: center;
+   margin-left: 0;
+   background-color: burlywood;
+}
+.b1 .liuyan text{
+  color: black;
+  background-color: burlywood;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-left: 0;
+}
+
+

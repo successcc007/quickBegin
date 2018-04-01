@@ -1,0 +1,11 @@
+<!--login.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <input type='text' bindinput ="nameInput"  placeholder='请输入用户名' class='login' name='uname' id='pword'></input>
+  <input type='password' bindinput ="pwordInput"  placeholder='请输入密码' class='login' name='pword' id='pword'></input>
+    <button class='login' bindtap="loginclick" > 登录 </button>   
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

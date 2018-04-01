@@ -1,0 +1,21 @@
+<!--manage.wxml-->
+<view class="containerall">
+<view class='manageaddview'>
+<button class='manageadd' bindtap='addClick'>新建</button>
+</view>
+<view wx:for="{{classes}}">
+<view class='itemview' >
+名称    ：<input type='text' value=' {{item.name}}' class='managetext' name='name' id='name'></input></view>
+<view class='itemview' >
+地点    ：<input type='text' value=' {{item.area}}' class='managetext' name='area' id='area'></input></view>
+<view class='itemview' >
+时间    ：<input type='text' value=' {{item.time}}' class='managetext' name='time' id='time'></input></view>
+<view class='itemview' >
+二维码：<image class='managetext' name='qrcode' id='qrcode' src='{{item.img_qrcode}}' ></image> 
+</view>
+<view class='itemview' >
+<button  bindtap='clkDel'  class='managetext' name='delete' id='delete{{item.id}}'>删除</button>
+
+ <button bindtap='doclick' class='managetext' name='class_begin' id='{{item.id}}'>上课</button></view>
+</view> 
+</view>

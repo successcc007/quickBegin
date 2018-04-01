@@ -1,0 +1,8 @@
+<!--pages/student/index/index.wxml-->
+<view class='back' bindtap="navigateBack" ><button>首页</button></view>
+<button class='btn'>定位发布</button>
+<button class='btn'>留言查看</button>
+<button class='btn'>文件浏览</button>
+<button class='btn'>成绩查询</button>
+<button class='btn'>公告查询</button>
+<button class='btn'>课程查询</button>

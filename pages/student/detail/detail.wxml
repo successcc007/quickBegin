@@ -1,0 +1,3 @@
+<!--pages/student/detail/detail.wxml-->
+<view class='back' bindtap="navigateBack" ><button>首页</button></view>
+<text>pages/student/detail/detail.wxml</text>

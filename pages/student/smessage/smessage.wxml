@@ -1,0 +1,28 @@
+<!--pages/student/smessage/smessage.wxml-->
+<view class='back' bindtap="navigateBack" ><button>首页</button></view>
+<view class="table">
+  <text>名称</text>
+  <text>时间</text>
+  <text>成绩</text>
+
+  <view class="b1">
+    <view class='liuyan'>
+      <text>留言</text>
+    </view>
+    <block wx:for="{{listMessage}}" wx:key="{{code}}">
+      <view class='mes'>
+        <text class='message'>{{item.detail}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='b2'>
+    <view class='liuyan'>
+      <text>公告</text>
+    </view>
+    <block wx:for="{{listPublish}}" wx:key="{{code}}">
+      <view class='mes'>
+        <text class='message'>{{item.detail}}</text>
+      </view>
+    </block>
+  </view>
+</view>

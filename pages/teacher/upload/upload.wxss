@@ -1,0 +1,18 @@
+/* pages/teacher/upload/upload.wxss */
+.back button{
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 0 0 10px;
+}
+.back {
+  background-color: gainsboro;
+}
+.textview{
+  width: 100%;
+  height: 50%;
+}
+.text{
+  width: 100%;
+  height: 500rpx;
+}

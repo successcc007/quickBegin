@@ -1,0 +1,17 @@
+<!--pages/teacher/score/score.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">姓名</view>
+    <view class="th">分数</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.sName}}</view>
+      <view class="td">{{item.sScore}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.sName}}</view>
+      <view class="td">{{item.sScore}}</view>
+    </view>
+  </block>
+</view>

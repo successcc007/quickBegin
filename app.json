@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/public/main/index",
+    "pages/public/login",
+    "pages/teacher/manage/manage",
+    "pages/student/index/index",
+    "pages/student/smessage/smessage",
+    "pages/student/detail/detail",
+    "pages/student/location/location",
+    "pages/teacher/upload/upload",
+    "pages/teacher/message/message",
+    "pages/teacher/studentlist/studentlist",
+    "pages/teacher/sign/signinfo/signinfo",
+    "pages/teacher/sign/sign",
+    "pages/teacher/add/add",
+    "pages/teacher/score/score",
+    "pages/index/index",    
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
