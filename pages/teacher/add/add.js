@@ -7,7 +7,13 @@ Page({
   data: {
     name: '',
     adress: '',
-    time: ''
+    time: '',
+    tId:''
+  },
+  clkqr:function(){
+    wx.navigateTo({
+      url: '../../../public/main/index',
+    })
   },
   nameInput: function (e) {
     this.setData({
@@ -34,13 +40,15 @@ Page({
     var name = this.data.name;
     var adress = this.data.adress;
     var time = this.data.time;
+    let tId = this.data.cId;
     wx.request({
       url: 'http://localhost/wxopenClass/api/v1/index/AddClass',   
       method:'post',   
       data: {
         name:name,
         adress:adress,
-        time:time
+        time:time,
+        tId: tId
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值
@@ -59,7 +67,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that=this;
+    let tId = wx.getStorageSync("id");
+    if(cId){
+      that.setData({
+        tId:tId
+      })
+    }else{
+      wx.redirectTo({
+        url: '../../../publick/login/login',
+      })
+    }
   },
 
   /**

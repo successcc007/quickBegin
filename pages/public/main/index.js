@@ -5,7 +5,7 @@ Page({
     canvasHidden:false,
     maskHidden:true,
     imagePath:'',
-    placeholder:'http://wxapp-union.com'//默认二维码生成文本
+    placeholder:'www.huangzhixiong.xyz'//默认二维码生成文本
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -15,10 +15,8 @@ Page({
     
 
   },
-  onReady:function(){
-  
-  },
-  onShow:function(){
+  onReady:function(){},
+  Show:function(){
     
     // 页面显示
   },

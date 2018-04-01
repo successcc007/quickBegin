@@ -11,11 +11,11 @@
 <view class='itemview' >
 时间    ：<input type='text' value=' {{item.time}}' class='managetext' name='time' id='time'></input></view>
 <view class='itemview' >
-二维码：<image class='managetext' name='qrcode' id='qrcode' src='{{item.img_qrcode}}' ></image> 
-</view>
-<view class='itemview' >
 <button  bindtap='clkDel'  class='managetext' name='delete' id='delete{{item.id}}'>删除</button>
 
  <button bindtap='doclick' class='managetext' name='class_begin' id='{{item.id}}'>上课</button></view>
 </view> 
+<view class='itemview' >
+二维码：<image class='managetext' name='qrcode' id='qrcode' src='{{item.img_qrcode}}' ></image> 
+</view>
 </view>

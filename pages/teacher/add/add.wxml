@@ -13,7 +13,7 @@
     <input type='text' class='managetext' name='time'  bindinput ="timeInput" placeholder="上课时间"></input>
   </view>
   <view class='itemview'>
-    <button class='managetext' name='delete' id='add'>生成二维码</button>
+    <button class='managetext' name='delete' id='add' bindtap='clkqr'>生成二维码</button>
   </view>
   <view class='itemview'>
     <image class='managetext' name='qrcode' id='qrcode' src='{{img_qrcode}}'></image>

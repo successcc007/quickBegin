@@ -35,6 +35,9 @@ Page({
         console.log(res.data)
         let t = res.data['info'];
         console.log(t);
+        wx.setStorageSync("uname", t.uname);
+        wx.setStorageSync("type", t.type);
+        wx.setStorageSync("id", t.id);
         if(1==t.type){
           wx.navigateTo({
             url: '../teacher/manage/manage',
