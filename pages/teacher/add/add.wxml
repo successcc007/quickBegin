@@ -13,12 +13,13 @@
     <input type='text' class='managetext' name='time'  bindinput ="timeInput" placeholder="上课时间"></input>
   </view>
   <view class='itemview'>
+    <button class='managetext' name='class_begin'  bindtap='doclick' >确定</button>
+  </view>
+  <view class='itemview'>
+    本课程的编号为 ：
+    <input type='text' class='managetext' name='id' value='{{cId}}' ></input>
+  </view>
+   <view class='itemview'>
     <button class='managetext' name='delete' id='add' bindtap='clkqr'>生成二维码</button>
-  </view>
-  <view class='itemview'>
-    <image class='managetext' name='qrcode' id='qrcode' src='{{img_qrcode}}'></image>
-  </view>
-  <view class='itemview'>
-    <button class='managetext' name='class_begin' id='class{{item.id}}' bindtap='doclick' >确定</button>
   </view>
 </view>

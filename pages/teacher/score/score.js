@@ -17,9 +17,11 @@ Page({
     console.log('onLoad')
     let that = this;
     let cId = options.cId;
+    let url = getApp().globalData.urlconst + 'api/v1/index/GetScores';    
+
     console.log(cId)
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/GetScores', //仅为示例，并非真实的接口地址      
+      url: url, //仅为示例，并非真实的接口地址      
       header: {
         'content-type': 'application/json' // 默认值
       },

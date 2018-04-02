@@ -6,7 +6,7 @@ Page({
    */
   data: {
     classes: [
-      { name: "理科1班", area: "安徽", time: "13:00", img_qrcode: "../../image/001.jpg", id: "1" },
+      {name: "理科1班", area: "安徽", time: "13:00", img_qrcode: "../../image/001.jpg", id: "1" },
     ]
   },
   addClick: function () {
@@ -23,8 +23,9 @@ Page({
     let that = this;
     let cId = e.target.id;
     cId = cId.replace('delete', '');
+    let url = getApp().globalData.urlconst + 'api/v1/index/DeleteClass';
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/DeleteClass',
+      url: url,
       header: {
         'content-type': 'application/json' // 默认值
       },
@@ -44,8 +45,9 @@ Page({
    */
   onLoad: function (options) {
     let that = this;
+    let url = getApp().globalData.urlconst + 'api/v1/index/GetClasses';    
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/GetClasses', //仅为示例，并非真实的接口地址      
+      url: url, //仅为示例，并非真实的接口地址      
       header: {
         'content-type': 'application/json' // 默认值
       },

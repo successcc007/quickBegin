@@ -21,8 +21,10 @@ Page({
     let that=this;  
     let cId = options.cId;
     console.log(cId)
+    let url = getApp().globalData.urlconst + 'api/v1/index/GetSignInfo';    
+
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/GetSignInfo', //仅为示例，并非真实的接口地址      
+      url: url, //仅为示例，并非真实的接口地址      
       header: {
         'content-type': 'application/json' // 默认值
       },

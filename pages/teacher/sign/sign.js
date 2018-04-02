@@ -44,8 +44,10 @@ Page({
       cId:cId
     })
     var that =this;
+    let url = getApp().globalData.urlconst + 'api/v1/index/GetClassSingle';    
+
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/GetClassSingle', //仅为示例，并非真实的接口地址      
+      url: url, //仅为示例，并非真实的接口地址      
       header: {
         'content-type': 'application/json' // 默认值
       },

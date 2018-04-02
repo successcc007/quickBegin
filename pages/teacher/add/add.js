@@ -8,11 +8,12 @@ Page({
     name: '',
     adress: '',
     time: '',
-    tId:''
+    tId: '',
+    cId: ''
   },
-  clkqr:function(){
+  clkqr: function () {
     wx.navigateTo({
-      url: '../../../public/main/index',
+      url: '../../../pages/public/main/index',
     })
   },
   nameInput: function (e) {
@@ -37,17 +38,19 @@ Page({
     });
   },
   doclick: function () {
+    let that = this;
     var name = this.data.name;
     var adress = this.data.adress;
     var time = this.data.time;
-    let tId = this.data.cId;
+    let tId = wx.getStorageSync("id");
+    var url = getApp().globalData.urlconst + "api/v1/index/AddClass";
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/AddClass',   
-      method:'post',   
+      url: url,
+      method: 'post',
       data: {
-        name:name,
-        adress:adress,
-        time:time,
+        name: name,
+        adress: adress,
+        time: time,
         tId: tId
       },
       header: {
@@ -55,9 +58,10 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
-        wx.redirectTo({
-          url: '../manage/manage',
+        that.setData({
+          cId:res.data.info
         })
+        console.log(that.data.cId);
       }
     })
   },
@@ -67,13 +71,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that=this;
+    let that = this;
     let tId = wx.getStorageSync("id");
-    if(cId){
+    if (tId) {
       that.setData({
-        tId:tId
+        tId: tId
       })
-    }else{
+    } else {
       wx.redirectTo({
         url: '../../../publick/login/login',
       })

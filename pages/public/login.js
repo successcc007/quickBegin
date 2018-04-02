@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    id: '',
     uname: '',
     pword: ''
   },
@@ -16,13 +17,15 @@ Page({
   pwordInput: function (e) {
     this.setData({
       pword: e.detail.value
-    })   
-  },  
+    })
+  },
   loginclick: function () {
     let name = this.data.uname;
     let pword = this.data.pword;
+    let url = getApp().globalData.urlconst + 'api/v1/index/Login';
+
     wx.request({
-      url: 'http://localhost/wxopenClass/api/v1/index/Login',
+      url: url,
       method: 'post',
       data: {
         uname: name,
@@ -32,21 +35,22 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
       success: function (res) {
+        console.log("res.data")
         console.log(res.data)
         let t = res.data['info'];
         console.log(t);
         wx.setStorageSync("uname", t.uname);
         wx.setStorageSync("type", t.type);
         wx.setStorageSync("id", t.id);
-        if(1==t.type){
+        if (1 == t.type) {
           wx.navigateTo({
             url: '../teacher/manage/manage',
           })
-        }else{
+        } else {
           wx.navigateTo({
             url: '../student/index/index',
           })
-        }       
+        }
       }
     })
   },
@@ -54,7 +58,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let t = wx.getStorageSync("type");
+    let id = wx.getStorageSync("id");
+    if (id != null && id != undefined && id != '') {
+      if (1 == t) {
+        wx.navigateTo({
+          url: '../teacher/manage/manage',
+        })
+      } else {
+        wx.navigateTo({
+          url: '../student/index/index',
+        })
+      }
+    }
   },
 
   /**
@@ -105,5 +121,5 @@ Page({
   onShareAppMessage: function () {
 
   }
-  
+
 })

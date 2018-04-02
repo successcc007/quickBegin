@@ -5,6 +5,8 @@
 </view>
 <view wx:for="{{classes}}">
 <view class='itemview' >
+编号    ：<input type='text' value=' {{item.id}}' class='managetext' name='id' id='id'></input></view>
+<view class='itemview' >
 名称    ：<input type='text' value=' {{item.name}}' class='managetext' name='name' id='name'></input></view>
 <view class='itemview' >
 地点    ：<input type='text' value=' {{item.area}}' class='managetext' name='area' id='area'></input></view>
@@ -15,7 +17,4 @@
 
  <button bindtap='doclick' class='managetext' name='class_begin' id='{{item.id}}'>上课</button></view>
 </view> 
-<view class='itemview' >
-二维码：<image class='managetext' name='qrcode' id='qrcode' src='{{item.img_qrcode}}' ></image> 
-</view>
 </view>
