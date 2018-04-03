@@ -6,10 +6,18 @@ Page({
    */
   data: {
     listData: [
-      { "name": "物理", "teacher": "王老师", "do": "GO","id":"1" }
+      { "name": "物理", "teacher": "王老师", "do": "GO", "id": "1" }
     ]
   },
 
+  /*go btn click*/
+  fungo: function (e) {
+    console.log(e);
+    let id = e.target.id;
+    wx.navigateTo({
+      url: '../index/index?cId='+id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -25,7 +33,7 @@ Page({
       data: {
         sId: sId
       },
-     
+
       success: function (res) {
         var info = res.data['info'];
         console.log(info);
@@ -34,12 +42,12 @@ Page({
           var a = "listData[" + i + "].teacher";
           var t = "listData[" + i + "].id";
           var d = "listData[" + i + "].do";
-       
+
           that.setData({
             [n]: info[i].name,
             [a]: info[i].tId,
             [t]: info[i].id,
-            [d]:'Go'
+            [d]: 'Go'
           });
         }
       }

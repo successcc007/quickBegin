@@ -3,7 +3,7 @@
 <button class='loginOut' bindtap='loginOut'>退出</button>
 </view>
 <view class="container">  
-  <view class="saoma" bindtap="click">扫码加入课程</view>  
+  <view class="saoma" bindtap="click">扫码加入</view>  
   <view class="show">{{show}}</view> 
 <button class='btn' bindtap='SendPositon'>定位发布</button>
 <button class='btn'>留言查看</button>

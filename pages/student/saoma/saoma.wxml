@@ -1,0 +1,11 @@
+<!--pages/student/saoma/saoma.wxml-->
+<view class='all'>
+<view >
+<button class='loginOut' bindtap='loginOut'>退出</button>
+</view>
+<view class='container'>
+ <view class="saoma" bindtap="click">扫码加入</view>  
+  <view class="show">{{show}}</view> 
+  <button type='primary' size='default' class='btn' bindtap='classesSelected'>已选课程</button>
+  </view>
+  </view>

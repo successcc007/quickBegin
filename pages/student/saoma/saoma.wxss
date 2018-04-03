@@ -1,0 +1,39 @@
+/* pages/student/saoma/saoma.wxss */
+.btn{
+  margin: 120rpx auto;  
+}
+.saoma{  
+  height: 40px;  
+  width:110px;  
+  line-height: 40px;  
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 10rpx;
+  color: #fff;  
+  background-color: #999;  
+  text-align: center;  
+}  
+.show{  
+  width: 100%;  
+  color: #666;  
+  background-color: #fff;  
+   height: auto;     
+} 
+.loginOut {
+  margin:10rpx 10rpx 30rpx 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 150rpx;
+  float: right;
+}
+.container{
+padding: 10rpx ;
+float: left;
+margin: 40% 0 0 35%;
+}
+
+.all{
+  height: 100%;
+  width: 100%;
+  background-color: red
+}

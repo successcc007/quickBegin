@@ -43,3 +43,7 @@
   height: 3rem;
   align-items: center;
 }
+view button{
+   color: white; 
+    background-color: green;  
+}

@@ -1,18 +1,11 @@
-// pages/student/index/index.js
+// pages/student/saoma/saoma.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    show: "",
-    cId:''
-  },
   
-  SendPositon: function () {
-    wx.navigateTo({
-      url: '../../public/position/position?cId='+cId,
-    })
   },
   //退出登录
   loginOut: function () {
@@ -21,6 +14,15 @@ Page({
       url: '../../public/login',
     })
   },
+  //已选课程
+  classesSelected:function(){
+    wx.navigateTo({
+      url: '../classes/classes',
+    })
+  },
+  /**
+   * saoma
+   */
   click: function () {
     var that = this;
     var show;
@@ -51,57 +53,55 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      cId:options.cId
-    })
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+  
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+  
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+  
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+  
   }
 })

@@ -48,7 +48,7 @@ Page({
           })
         } else {
           wx.redirectTo({
-            url: '../student/classes/classes',
+            url: '../student/saoma/saoma',
           })
         }
       }
@@ -67,7 +67,7 @@ Page({
         })
       } else {
         wx.navigateTo({
-          url: '../student/classes/classes',
+          url: '../student/saoma/saoma',
         })
       }
     }

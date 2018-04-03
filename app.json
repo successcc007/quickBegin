@@ -11,6 +11,7 @@
     "pages/student/smessage/smessage",
     "pages/student/detail/detail",
     "pages/student/location/location",
+    "pages/student/saoma/saoma",
     "pages/teacher/upload/upload",
     "pages/teacher/message/message",
     "pages/teacher/studentlist/studentlist",
