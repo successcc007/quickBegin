@@ -43,12 +43,12 @@ Page({
         wx.setStorageSync("type", t.type);
         wx.setStorageSync("id", t.id);
         if (1 == t.type) {
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../teacher/manage/manage',
           })
         } else {
-          wx.navigateTo({
-            url: '../student/index/index',
+          wx.redirectTo({
+            url: '../student/classes/classes',
           })
         }
       }
