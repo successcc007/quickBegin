@@ -19,6 +19,13 @@ Page({
       url: '../sign/sign?cId=' + e.target.id,
     })
   },
+  //退出登录
+  loginOut :function(){
+    wx.clearStorageSync();
+    wx.navigateTo({
+      url: '../../public/login',
+    })
+  },
   clkDel: function (e) {
     let that = this;
     let cId = e.target.id;

@@ -1,0 +1,26 @@
+<!--pages/public/position/position.wxml-->
+
+<view class="page-body">  
+<view class="page-body-form">  
+    <text class="page-body-form-key">经度：</text>  
+    <input class="page-body-form-value" type="text"   
+    value="{{longitude}}" name="longitude"></input>  
+    <text class="page-body-form-key">纬度:</text>  
+    <input class="page-body-form-value" type="text"   
+    value="{{latitude}}" name="latitude"></input>    
+    <view class="page-body-buttons">  
+    <button class="page-body-button" type="primary"   
+    bindtap="getLocation">自动定位</button>  
+     <button class="page-body-button" type="primary"   
+    bindtap="senPosition">发布定位</button>  
+    </view>  
+</view>  
+</view>  
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="20" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+ bindregionchange="regionchange"
+ controls="{{controls}}">
+</map>

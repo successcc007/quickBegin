@@ -1,0 +1,12 @@
+{
+"pages": [
+  "pages/public/position/position"
+],
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "定位",
+  "navigationBarTextStyle": "black"
+}
+
+}

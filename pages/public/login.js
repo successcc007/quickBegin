@@ -67,7 +67,7 @@ Page({
         })
       } else {
         wx.navigateTo({
-          url: '../student/index/index',
+          url: '../student/classes/classes',
         })
       }
     }

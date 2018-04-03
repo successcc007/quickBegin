@@ -1,6 +1,7 @@
 <!--manage.wxml-->
 <view class="containerall">
 <view class='manageaddview'>
+<button class='loginOut' bindtap='loginOut'>退出登录</button>
 <button class='manageadd' bindtap='addClick'>新建</button>
 </view>
 <view wx:for="{{classes}}">

@@ -2,3 +2,32 @@
 .btn{
   margin: 20rpx auto;
 }
+.saoma{  
+  height: 40px;  
+  width:110px;  
+  line-height: 40px;  
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 10rpx;
+  color: #fff;  
+  background-color: #999;  
+  text-align: center;  
+}  
+.show{  
+  width: 100%;  
+  color: #666;  
+  background-color: #fff;  
+   height: auto;     
+} 
+.container{
+padding: 10rpx ;
+float: left;
+margin: 0 0 0 30%;
+}
+.loginOut {
+  margin:10rpx 10rpx 30rpx 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 150rpx;
+  float: right;
+}

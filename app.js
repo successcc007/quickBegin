@@ -35,7 +35,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    urlconst:"http://localhost/quickBeginBack/"
+    urlconst: "http://localhost/quickBeginBack/",
+    locationInfo: ''
   }
- 
+
 })

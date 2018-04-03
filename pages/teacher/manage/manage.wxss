@@ -19,11 +19,18 @@
 }
 
 .manageadd {
-  color: red;
-  margin:0 auto 30rpx;
+  margin:0 0 0 100rpx;
   height: 80rpx;
   line-height: 80rpx;
-  width: 90%;
+  width: 20%;
+  float: left;
+}
+.loginOut {
+  margin:0 10rpx 30rpx 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 120rpx;
+  float: right;
 }
 
 .manageaddview {

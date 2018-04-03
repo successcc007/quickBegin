@@ -1,5 +1,4 @@
 <!--pages/teacher/studentlist/studentlist.wxml-->
-<view class='back' bindtap="navigateBack" ><button>首页</button></view>
 <view class="table">
   <view class="tr bg-w">
     <view class="th">姓名</view>

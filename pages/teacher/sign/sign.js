@@ -8,10 +8,16 @@ Page({
     cId:'',
     name:'',
     adress:'',
-    time:''
-  },
-  
+    time:'',
 
+  },
+  //发布定位
+  setPositon:function(){  
+    
+    wx.navigateTo({
+      url: '../sign/signinfo/signinfo?cId=' + that.data.cId,
+    })
+  },
   navigateBack: function () {
     wx.navigateTo({      
       url: "../manage/manage"

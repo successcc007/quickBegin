@@ -13,7 +13,7 @@
     <input type='text' value='{{time}} ' class='managetext' name='time' id='time'></input>
   </view>
   <view class='itemview'>
-    <button  class='managetext' name='delete' id='add'>发布定位</button> 
+    <button  class='managetext' name='delete' bindtap='setPositon'>发布定位</button> 
   </view>  
   <view class='itemview'>
     <button bindtap='clksigninfo' class='managetext' name='delete' id='add'>签到情况</button> 
